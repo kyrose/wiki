@@ -1,0 +1,50 @@
+{% macro renderNavListItem(article) -%}
+  {% set classes = '' %}
+
+  {% if article.url == page.url %}
+    {% set classes = 'font-semibold' %}
+  {% endif %}
+
+  <li>
+    <a
+      class="block {{ classes }} mb-1 p-2 pb-1 w-full hover:text-gray-900"
+      href="{{ article.url | url }}"
+      title="View {{ article.title }}"
+    >{{ article.title }}</a>
+
+    {% if article.children.length %}
+      <ol class="ml-6">
+        {% for child in article.children %}
+          {{ renderNavListItem(child) }}
+        {% endfor %}
+      </ol>
+    {% endif %}
+  </li>
+{% endmacro %}
+
+<nav
+  class="bg-white border-r border-gray-100 fixed h-full hidden overflow-x-hidden overflow-y-auto p-4 text-gray-500 w-full z-20 md:block md:relative md:pt-24 md:w-64 md:z-0 lg:w-72"
+  id="menu"
+>
+  <button
+    aria-label="Close menu"
+    class="block ml-auto p-2 text-gray-400 hover:text-gray-900 md:hidden"
+    id="menu-close"
+    title="Hide menu"
+  >
+    <img
+      alt="Close menu icon"
+      class="fill-current"
+      inline
+      src="/assets/images/close.svg"
+    />
+  </button>
+
+  <ol>
+    {% block firstItem %}{% endblock %}
+
+    {% for article in articles %}
+      {{ renderNavListItem(article) }}
+    {% endfor %}
+  </ol>
+</nav>

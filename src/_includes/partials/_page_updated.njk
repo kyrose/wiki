@@ -1,0 +1,10 @@
+<div class="flex justify-end mt-4 px-4 space-x-4 text-gray-500 text-xs">
+  <p class="py-1">Updated <time datetime="{{ page.date | dateymd }}">{{ page.date | datefriendly }}</time></p>
+  <a
+    class="inline-block px-3 py-1 rounded w-auto hover:bg-gray-200"
+    href="{{ site.repository.url }}/edit/{{ site.repository.branch }}/{{ page.inputPath }}"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Edit article on GitHub in a new window"
+  >Edit</a>
+</div>

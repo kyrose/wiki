@@ -1,0 +1,41 @@
+<ol class="flex my-8">
+  {% set previousArticle = collections.menuItems | getPreviousCollectionItem(page) %}
+  {% if previousArticle and tags[0] == previousArticle.data.tags[0] %}
+    <li class="mr-auto">
+      <a
+        class="font-semibold text-gray-500 hover:text-gray-900"
+        href="{{ previousArticle.url | url }}"
+        title="Go to the previous article"
+      >
+        <img
+          alt="Left arrow"
+          class="fill-current h-6 inline-block"
+          inline
+          src="/assets/images/arrow-left.svg"
+        />
+
+        {{ previousArticle.data.title }}
+      </a>
+    </li>
+  {% endif %}
+
+  {% set nextArticle = collections.menuItems | getNextCollectionItem(page) %}
+  {% if nextArticle and tags[0] == nextArticle.data.tags[0] %}
+    <li class="ml-auto">
+      <a
+        class="font-semibold text-gray-500 hover:text-gray-900"
+        href="{{ nextArticle.url | url }}"
+        title="Go to the next article"
+      >
+        {{ nextArticle.data.title }}
+
+        <img
+          alt="Right arrow"
+          class="fill-current h-6 inline-block"
+          inline
+          src="/assets/images/arrow-right.svg"
+        />
+      </a>
+    </li>
+  {% endif %}
+</ol>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html {% if section %}data-current="{{ section }}"{% endif %} lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} @ {{ site.name }}</title>
+    <meta name="description" content="{{ description }}" />
+    <link href="/assets/css/style.css?{% version %}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white debug-screens flex h-screen min-h-screen relative">
+    {% include 'partials/_header.njk' %}
+
+    {% block nav %}{% endblock %}
+
+    <div
+      class="flex flex-col flex-1 mt-20 overflow-y-auto"
+      id="content"
+    >
+      <main class="flex-1 pt-4">
+        <article>
+          {% include 'partials/_page_updated.njk' %}
+
+          <section class="max-w-5xl mt-4 mx-auto px-6 lg:px-8 xl:px-12">
+            <header>
+              <h1 class="font-extrabold mb-10 text-5xl">{{ title }}</h1>
+            </header>
+
+            <div class="prose text-gray-700 sm:prose lg:prose-lg xl:prose-md">
+              {{ content | safe }}
+            </div>
+
+            {% block prevnext %}{% endblock %}
+          </section>
+        </article>
+      </main>
+
+      {% include 'partials/_footer.njk' %}
+    </div>
+
+    {% include 'partials/_scroll_top.njk' %}
+
+    {% include 'partials/_cookies.njk' %}
+
+    <script type="module" src="/assets/js/main.js?{% version %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js" integrity="sha512-0QarUp4p9r5IqUgSRyP89BHga45OpEd7VR8lbRkJkf48p/EhcU742fWUpKpoDyu9N6XYAEq/vz6m6z1OolnsDw==" crossorigin="anonymous"></script>
+  </body>
+</html>

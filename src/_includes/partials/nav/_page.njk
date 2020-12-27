@@ -1,0 +1,9 @@
+{% set articles = collections.featured | eleventyNavigation %}
+
+{% extends 'partials/nav/_base.njk' %}
+
+{% block firstItem %}
+  <li>
+    <h1 class="font-semibold mb-1 p-2 pb-1 text-gray-600 w-full">Wiki list</h1>
+  </li>
+{% endblock %}

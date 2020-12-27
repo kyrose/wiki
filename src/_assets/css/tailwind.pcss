@@ -1,0 +1,30 @@
+@tailwind base;
+
+@tailwind components;
+
+.list-none li::before {
+  content: none !important;
+}
+
+ul#searchResults li {
+  @apply px-4;
+  @apply py-2;
+}
+
+ul#searchResults li a {
+  @apply block;
+}
+
+ul#searchResults li:hover {
+  @apply text-gray-900;
+}
+
+.prose code::after {
+  content: none !important;
+}
+
+.prose ul > li > :first-child {
+  margin: inherit !important;
+}
+
+@tailwind utilities;

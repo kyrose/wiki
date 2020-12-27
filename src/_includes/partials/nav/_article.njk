@@ -1,0 +1,22 @@
+{% set articles = collections[tags[0]] | eleventyNavigation %}
+
+{% extends 'partials/nav/_base.njk' %}
+
+{% block firstItem %}
+  <li>
+    <a
+      class="flex items-center mb-1 pb-1 pt-2 text-sm w-full hover:text-gray-900"
+      href="/"
+      title="Go back to the home page"
+    >
+      <img
+        alt="Left arrow"
+        class="fill-current h-5 inline-block"
+        inline
+        src="/assets/images/arrow-left.svg"
+      />
+
+      Back home
+    </a>
+  </li>
+{% endblock %}
