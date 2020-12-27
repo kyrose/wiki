@@ -1,0 +1,39 @@
+
+[
+  
+    {
+      "id": "/building-a-wiki-with-11ty/",
+      "title": "Building a wiki with 11ty"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/page-03/",
+      "title": "Eleventy 03"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/page-04/",
+      "title": "Eleventy 04"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/page-05/",
+      "title": "Eleventy 05"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/embed-content/",
+      "title": "Embed content"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/extending-the-wiki/",
+      "title": "Extending the wiki"
+    } ,
+  
+    {
+      "id": "/building-a-wiki-with-11ty/markdown-demo/",
+      "title": "Markdown demo"
+    } 
+  
+]
