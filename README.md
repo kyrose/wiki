@@ -26,8 +26,8 @@ donation to its creators.
 [license]: LICENSE.md
 [Contributor Covenant]: https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg?style=flat-square
 [Code of Conduct]: CODE_OF_CONDUCT.md
-[Build and Deploy]: https://github.com/inigochoa/wiki/actions?style=flat-square&query=workflow%3A%22Build+and+Deploy%22
-[deploy]: https://github.com/inigochoa/wiki/workflows/Build%20and%20Deploy/badge.svg
+[Build and Deploy]: https://github.com/inigochoa/wiki/actions?query=workflow%3A%22Build+and+Deploy%22
+[deploy]: https://img.shields.io/github/workflow/status/inigochoa/wiki/Build%20and%20Deploy?style=flat-square
 [**inigochoa**]: https://github.com/inigochoa/
 [11ty]: https://www.11ty.dev/
 [Contributing]: CONTRIBUTING.md
