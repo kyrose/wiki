@@ -7,7 +7,6 @@ eleventyNavigation:
   parent: 11ty
 ---
 
-<!-- Excerpt Start -->
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
 ligula non sodales tincidunt. Nunc semper bibendum ullamcorper. Proin sed ex
 ullamcorper, sagittis sem a, molestie dolor. Curabitur a venenatis ante.
@@ -21,7 +20,6 @@ commodo dui, in finibus quam. Phasellus scelerisque posuere odio, consequat
 aliquet augue placerat id. Donec nec nunc justo. Curabitur congue, metus sit
 amet consectetur tempus, tortor dui porttitor lacus, in facilisis neque lectus
 quis nibh. Vivamus dictum lorem nec orci lacinia, in bibendum massa volutpat.
-<!-- Excerpt End -->
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
 turpis egestas. Duis et suscipit mi. Morbi dui metus, interdum et lectus in,

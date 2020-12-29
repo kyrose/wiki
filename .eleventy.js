@@ -48,6 +48,7 @@ module.exports = config => {
   })
 
   /* --- SHORTCODES --- */
+  config.addShortcode('excerpt', require('./lib/shortcodes/excerpt'))
   config.addShortcode('version', require('./lib/shortcodes/version'))
 
   /* --- TRANSFORMATIONS --- */
@@ -55,6 +56,7 @@ module.exports = config => {
     config.addTransform('htmlminify', require('./lib/transforms/htmlminify'))
   }
   config.addTransform('inline', require('./lib/transforms/inline'))
+  config.addTransform('jsonminify', require('./lib/transforms/jsonminify'))
 
   /* --- WATCHES --- */
   config.addWatchTarget('./_assets/src/css/')

@@ -65,6 +65,7 @@
     .then(docs => {
       window.searchIndex = elasticlunr(function() {
         this.addField('title')
+        this.addField('excerpt')
         this.setRef('id')
 
         docs.forEach(function(doc) {

@@ -6,7 +6,8 @@ permalink: /search-index.json
   {% for article in collections.search %}
     {
       "id": "{{ article.url }}",
-      "title": "{{ article.data.title }}"
+      "title": "{{ article.data.title }}",
+      "excerpt": "{% excerpt article %}"
     } {% if not loop.last %},{% endif %}
   {% endfor %}
 ]

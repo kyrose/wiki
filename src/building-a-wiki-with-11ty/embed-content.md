@@ -7,11 +7,9 @@ eleventyNavigation:
   parent: Building a wiki with 11ty
 ---
 
-<!-- Excerpt Start -->
 It is possible to embed content on any page from different sites (Twitter,
 YouTube, Vimeo, Spotify, Instagram, ...) using the plugin for 11ty [embed
 everything].
-<!-- Excerpt End -->
 
 ## Twitter
 
