@@ -40,10 +40,10 @@
   "scripts": {
     "clean": "rimraf _site",
     "serve": "npm-run-all clean --parallel dev:* --print-label",
-    "dev:11ty": "eleventy --serve --quiet",
+    "dev:11ty": "NODE_ENV=development eleventy --serve --quiet",
     "dev:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --watch",
     "build": "npm-run-all clean --parallel prod:* --print-label",
-    "prod:11ty": "eleventy --quiet",
+    "prod:11ty": "NODE_ENV=production eleventy --quiet",
     "prod:twnd": "postcss src/_assets/css/tailwind.pcss -o _site/assets/css/style.css --env production"
   }
 }
