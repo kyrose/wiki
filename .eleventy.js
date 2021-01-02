@@ -54,8 +54,8 @@ module.exports = config => {
   /* --- TRANSFORMATIONS --- */
   if (!dev) {
     config.addTransform('htmlminify', require('./lib/transforms/htmlminify'))
-    config.addTransform('inline', require('./lib/transforms/inline'))
   }
+  config.addTransform('inline', require('./lib/transforms/inline'))
   config.addTransform('jsonminify', require('./lib/transforms/jsonminify'))
 
   /* --- WATCHES --- */
