@@ -1,11 +1,13 @@
 ---
-title: Eleventy 03
-description: Wiki entrance for 11ty 03
+title: Adding images
+description: Adding images to the wiki articles
 eleventyNavigation:
-  key: 11ty 03
+  key: Adding images
   order: 130
-  parent: 11ty
+  parent: Building a wiki with 11ty
 ---
+
+![Space](/assets/images/600-400.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
 ligula non sodales tincidunt. Nunc semper bibendum ullamcorper. Proin sed ex
