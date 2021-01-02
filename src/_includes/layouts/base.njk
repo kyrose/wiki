@@ -1,14 +1,54 @@
+{% set assetsDir = '/assets/' %}
+
 <!DOCTYPE html>
-<html {% if section %}data-current="{{ section }}"{% endif %} lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
     <title>{{ title }} @ {{ site.name }}</title>
-    <meta name="description" content="{{ description }}" />
-    <link href="/assets/css/style.css?{% version %}" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <meta
+      content="{{ description }}"
+      name="description"
+    />
+    <link
+      href="{{ assetsDir }}css/style.css?{% version %}"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+    >
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap"
+      rel="preload"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="{{ assetsDir }}images/apple-touch-icon.png?{% version %}"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      type="image/png"
+    >
+    <link
+      href="{{ assetsDir }}images/favicon-32x32.png?{% version %}"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    >
+    <link
+      href="{{ assetsDir }}images/favicon-16x16.png?{% version %}"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    >
   </head>
   <body class="bg-white debug-screens flex h-screen min-h-screen relative">
     {% include 'partials/_header.njk' %}
@@ -44,7 +84,14 @@
 
     {% include 'partials/_cookies.njk' %}
 
-    <script type="module" src="/assets/js/main.js?{% version %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js" integrity="sha512-0QarUp4p9r5IqUgSRyP89BHga45OpEd7VR8lbRkJkf48p/EhcU742fWUpKpoDyu9N6XYAEq/vz6m6z1OolnsDw==" crossorigin="anonymous"></script>
+    <script
+      src="{{ assetsDir }}js/main.js?{% version %}"
+      type="module"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha512-0QarUp4p9r5IqUgSRyP89BHga45OpEd7VR8lbRkJkf48p/EhcU742fWUpKpoDyu9N6XYAEq/vz6m6z1OolnsDw=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
+    ></script>
   </body>
 </html>
