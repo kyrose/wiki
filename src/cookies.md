@@ -32,8 +32,8 @@ customized the site during future visits.
 
 If you want to restrict or block the cookies that are set by our website, you
 can do so through your browser setting. Alternatively, you can visit
-<www.internetcookies.org>, which contains comprehensive information on how to do
-this on a wide variety of browsers and devices. You will find general
+<https://www.internetcookies.org/>, which contains comprehensive information on
+how to do this on a wide variety of browsers and devices. You will find general
 information about cookies and details on how to delete cookies from your device.
 
 ## Contacting us
