@@ -6,34 +6,37 @@ eleventyExcludeFromCollections: true
 layout: page.njk
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium
-ligula non sodales tincidunt. Nunc semper bibendum ullamcorper. Proin sed ex
-ullamcorper, sagittis sem a, molestie dolor. Curabitur a venenatis ante.
-Pellentesque aliquet, mauris et volutpat scelerisque, metus neque scelerisque
-libero, vel congue velit nisl ac nunc. Interdum et malesuada fames ac ante ipsum
-primis in faucibus. Nam at pretium lectus. Donec turpis velit, dapibus eu eros
-vel, interdum sollicitudin libero. Orci varius natoque penatibus et magnis dis
-parturient montes, nascetur ridiculus mus. Curabitur hendrerit tincidunt nisl
-sit amet auctor. Donec eleifend bibendum odio, placerat tempor tellus. Nam et
-commodo dui, in finibus quam. Phasellus scelerisque posuere odio, consequat
-aliquet augue placerat id. Donec nec nunc justo. Curabitur congue, metus sit
-amet consectetur tempus, tortor dui porttitor lacus, in facilisis neque lectus
-quis nibh. Vivamus dictum lorem nec orci lacinia, in bibendum massa volutpat.
+## What are cookies?
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-turpis egestas. Duis et suscipit mi. Morbi dui metus, interdum et lectus in,
-sollicitudin tincidunt metus. Fusce viverra et est quis auctor. Aliquam luctus
-ac massa ut consectetur. Vestibulum quam risus, auctor sit amet augue non,
-efficitur cursus sem. Nunc vitae pretium sapien. Suspendisse efficitur
-consectetur lectus, eu congue tellus fringilla a. Quisque gravida lacus nec erat
-viverra congue. Fusce a pharetra enim.
+Cookies are simple text files that are stored on your computer or mobile device
+by a website’s server. Each cookie is unique to your web browser. It will
+contain some anonymous information such as a unique identifier, website’s domain
+name, and some digits and numbers.
 
-Suspendisse pretium dolor elit, sed bibendum magna sollicitudin vitae. Nam
-imperdiet euismod efficitur. Sed consequat, mauris et semper semper, elit turpis
-tristique purus, eget finibus mauris sapien molestie sapien. In eleifend ligula
-et risus rhoncus hendrerit. Donec sit amet venenatis nunc. Cras elit urna,
-pulvinar non nisi eu, cursus cursus sapien. Interdum et malesuada fames ac ante
-ipsum primis in faucibus. Aliquam commodo urna feugiat mauris semper feugiat.
-Nullam non ex arcu. Etiam sit amet lobortis erat. Nullam faucibus nisl sit amet
-quam ornare rutrum. Pellentesque luctus tristique elit quis aliquet. Donec
-laoreet pellentesque elit et feugiat.
+## What types of cookies do we use?
+
+### Necessary cookies
+
+Necessary cookies allow us to offer you the best possible experience when
+accessing and navigating through our website and using its features. For
+example, these cookies let us recognize that you have created an account and
+have logged into that account to access the content.
+
+### Functionality cookies
+
+Functionality cookies let us operate the site in accordance with the choices you
+make. For example, we will recognize your username and remember how you
+customized the site during future visits.
+
+## How to delete cookies?
+
+If you want to restrict or block the cookies that are set by our website, you
+can do so through your browser setting. Alternatively, you can visit
+<www.internetcookies.org>, which contains comprehensive information on how to do
+this on a wide variety of browsers and devices. You will find general
+information about cookies and details on how to delete cookies from your device.
+
+## Contacting us
+
+If you have any questions about this cookie policy or our use of cookies, please
+contact us.
